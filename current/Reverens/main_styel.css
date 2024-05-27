@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	animation-duration: 0s !important;
 }
 
 :root {
@@ -19,7 +20,6 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
-
 }
 
 .nav {
@@ -36,6 +36,13 @@
 	font-size: calc(var(--index) * 1.5);
 	text-decoration: none;
 	color: var(--color3);
+	transition-duration: 500ms;
+}
+
+.nav__waypoint:hover {
+	color: var(--color1);
+	transform: scale(1.3);
+	transition-duration: 500ms;
 }
 
 .chose {
@@ -46,21 +53,28 @@
 	justify-content: center;
 	text-align: center;
 	flex-wrap: wrap;
-	
-}
+	}
 
 .chose__btn {
-	width:40%;
+	width: 60%;
 	border-radius: 20px;
 	background-color: var(--color2);
 	color: var(--color3);
-	font-size: calc(var(--index) * 1.8);
+	font-size: calc(var(--index) * 1.2);
 	border-style: solid;
 	padding: 10px;
-	margin: 1vh;
-
-
+	transition-duration: 500ms;
+	margin-top: 2vh;
+	
 }
+
+.chose__btn:hover {
+	background-color: var(--color1);
+	cursor: pointer;
+	transform: scale(1.05);
+	transition-duration: 500ms;
+}
+
 .footer {
 	margin-top: 15vh;
 	font-size: calc(var(--index)*1.5);
