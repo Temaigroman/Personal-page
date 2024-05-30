@@ -1,0 +1,4 @@
+.footer {
+	margin-top: 1vh;
+	font-size: calc(var(--index)*1.5);
+}
