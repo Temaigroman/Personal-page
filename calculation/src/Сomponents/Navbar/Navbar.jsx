@@ -1,11 +1,12 @@
 import "./navbar_styel.css"
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
 	return ( 
 	<header className="nav">
-	<a className="nav__waypoint" href="">Главная страница</a>
-	<a className="nav__waypoint" href="">Регион</a>
-	<a className="nav__waypoint" href="">Участок</a>
-	<a className="nav__waypoint" href="">Должность</a>
+		<NavLink to='/' className="nav__waypoint">Главная страница</NavLink>
+		<NavLink to='/LocationAll' className="nav__waypoint">Участки</NavLink>
+		<NavLink to='/' className="nav__waypoint">Должность</NavLink>
 </header> );
 }
  

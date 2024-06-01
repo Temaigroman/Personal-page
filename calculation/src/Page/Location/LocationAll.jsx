@@ -1,7 +1,9 @@
 import Main_component from "../../Сomponents/Main/Main_component";
-import { locations } from "../../Lists/Location/locationList";
+import { locations } from "../../Lists/Location/locationListAll";
 
-const Location = () => {
+
+const LocationAll = () => {
+	
 	return ( 
 	<div className="chose">
 
@@ -15,4 +17,4 @@ const Location = () => {
 );
 }
  
-export default Location;
+export default LocationAll;

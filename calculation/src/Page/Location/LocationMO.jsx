@@ -1,5 +1,5 @@
 import Main_component from "../../Сomponents/Main/Main_component";
-import { locations } from "../../Lists/Location/locationList";
+import { locations } from "../../Lists/Location/locationListMO";
 
 const LocationMO = () => {
 	return ( 

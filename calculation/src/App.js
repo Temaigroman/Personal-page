@@ -12,6 +12,7 @@ import LocationSO from './Page/Location/LocationSO';
 import LocationBR from './Page/Location/LocationBR';
 import LocationTO from './Page/Location/LocationTO';
 import LocationMO from './Page/Location/LocationMO';
+import LocationAll from './Page/Location/LocationAll';
 
 function App() {
   return (
@@ -20,14 +21,15 @@ function App() {
         <Navbar />
         <Routes>
         <Route path="/" element={<Region/>}/>
-          <Route path="/LocationSPB" element={<LocationSPB />}/>
-          <Route path="/LocationLO" element={<LocationLO />}/>
-          <Route path="/LocationPSK" element={<LocationPSK />}/>
-          <Route path="/LocationNO" element={<LocationNO />}/>
-          <Route path="/LocationSO" element={<LocationSO />}/>
-          <Route path="/LocationBR" element={<LocationBR />}/>
-          <Route path="/LocationTO" element={<LocationTO />}/>
-          <Route path="/LocationMO" element={<LocationMO />}/>
+          <Route path="/:id" element={<LocationSPB />}/>
+          <Route path="/:id" element={<LocationLO />}/>
+          <Route path="/:id" element={<LocationPSK />}/>
+          <Route path="/:id" element={<LocationNO />}/>
+          <Route path="/:id" element={<LocationSO />}/>
+          <Route path="/:id" element={<LocationBR />}/>
+          <Route path="/:id" element={<LocationTO />}/>
+          <Route path="/:id" element={<LocationMO />}/>
+           <Route path="/LocationAll" element={<LocationAll />}/> 
             </Routes>
 
         <Footer />
