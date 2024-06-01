@@ -8,8 +8,3 @@ const Main_component = (props) => {
 
 export default Main_component;
 
-{/* <div className="chose"> может быть это все таки понадобится но разберись с разметкой потом
-
-
-</div>
- */}
