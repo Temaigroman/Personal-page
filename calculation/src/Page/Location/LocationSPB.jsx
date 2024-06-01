@@ -1,6 +1,7 @@
 import Main_component from "../../Сomponents/Main/Main_component";
 import { locations } from "../../Lists/Location/locationListSPB";
 
+
 const LocationSPB = () => {
 	return ( 
 	<div className="chose">

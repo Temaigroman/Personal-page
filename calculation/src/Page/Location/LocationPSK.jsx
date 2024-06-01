@@ -1,7 +1,7 @@
 import Main_component from "../../Сomponents/Main/Main_component";
 import { locations } from "../../Lists/Location/locationList";
 
-const Location = () => {
+const LocationPSK = () => {
 	return ( 
 	<div className="chose">
 
@@ -15,4 +15,4 @@ const Location = () => {
 );
 }
  
-export default Location;
+export default LocationPSK;

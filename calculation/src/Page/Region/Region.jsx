@@ -1,5 +1,6 @@
 import Main_component from "../../Сomponents/Main/Main_component";
 import { regions } from "../../Lists/Region_list/regionList";
+import { NavLink } from "react-router-dom";
 
 const Region = () => {
 	return (
