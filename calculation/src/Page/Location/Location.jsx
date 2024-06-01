@@ -5,8 +5,8 @@ const Location = () => {
 	return ( 
 	<div className="chose">
 
-		  {locations.map((location)=>{
-			return <Main_component title={location.title}/>
+		  {locations.map((location, index)=>{
+			return <Main_component key={index} title={location.title}/>
 
 			
 		})}  

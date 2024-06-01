@@ -3,8 +3,6 @@ const Main_component = (props) => {
 
 		<button className="chose__btn">{props.title}</button>
 
-
-
 	);
 }
 

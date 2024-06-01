@@ -5,8 +5,8 @@ const Works = () => {
 	return ( 
 	<div className="chose">
 
-		  {works.map((works)=>{
-			return <Main_component title={works.title}/>
+		  {works.map((works, index)=>{
+			return <Main_component  key={index} title={works.title}/>
 
 			
 		})}  
