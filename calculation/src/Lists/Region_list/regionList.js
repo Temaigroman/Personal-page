@@ -1,4 +1,4 @@
-const region = [
+const regions = [
 	{
 		title: 'Санкт-Петербург',
 
@@ -33,7 +33,6 @@ const region = [
 		title: 'Тверская область',
 
 	},
+	];
 
-];
-
-export { region }
+export { regions }

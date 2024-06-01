@@ -1,7 +1,7 @@
-const Region_component = () => {
+const Region_component = (props) => {
 		return (
 		<div className="chose">
-					<button className="chose__btn">СПБ</button>
+					<button className="chose__btn">{props.title}</button>
 		</div>
 		
 		
