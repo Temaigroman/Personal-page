@@ -9,7 +9,7 @@ const LocationSPB = ({index}) => {
 	 /* const  = locations[id]; */ 
 
 	return ( 
-		<NavLink to={`/${index}`} className="chose">
+		<NavLink to={`/${id}`} className="chose">
 			  {locations.map((location, index)=>{
 			return <Main_component key={index} title={location.title} index={index}/>
 			})}  	
