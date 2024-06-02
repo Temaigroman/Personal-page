@@ -43,3 +43,8 @@
 	transform: scale(1.05);
 	transition-duration: 500ms;
 }
+
+a {
+	color: #ffff;
+	text-decoration: none;
+}

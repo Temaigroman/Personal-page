@@ -1,7 +1,7 @@
 import Main_component from "../../Сomponents/Main/Main_component";
 import { locations } from "../../Lists/Location/locationListAll";
 
-
+{console.log(locations.title)}
 const LocationAll = () => {
 	
 	return ( 
@@ -16,5 +16,5 @@ const LocationAll = () => {
 	</div>
 );
 }
- 
+
 export default LocationAll;

@@ -1,18 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './app.css';
 import Region from './Page/Region/Region';
 import Footer from "./Сomponents/Footer/Footer"
 import Navbar from "./Сomponents/Navbar/Navbar"
-import LocationSPB from './Page/Location/LocationSPB';
-import LocationLO from './Page/Location/LocationLO';
-import LocationPSK from './Page/Location/LocationPSK';
-import LocationNO from './Page/Location/LocationNO';
-import LocationSO from './Page/Location/LocationSO';
-import LocationBR from './Page/Location/LocationBR';
-import LocationTO from './Page/Location/LocationTO';
-import LocationMO from './Page/Location/LocationMO';
-import LocationAll from './Page/Location/LocationAll';
+import LocationAll from './Page/Location/LocationAll'
+import LocationSPB from './Page/Location/LocationSPB'
+import LocationLO from './Page/Location/LocationLO'
+import LocationPSK from './Page/Location/LocationPSK'
+import LocationNO from './Page/Location/LocationNO'
+import LocationBR from './Page/Location/LocationBR'
+import LocationTO from './Page/Location/LocationTO'
+import LocationSO from './Page/Location/LocationSO'
+import LocationMO from './Page/Location/LocationMO'
 
 function App() {
   return (
@@ -21,15 +21,15 @@ function App() {
         <Navbar />
         <Routes>
         <Route path="/" element={<Region/>}/>
-          <Route  path="/region/:id" element={<LocationSPB />}/>
-          <Route  path="/region/:id"  element={<LocationLO />}/>
-          <Route  path="/region/:id"  element={<LocationPSK />}/>
-          <Route  path="/region/:id"  element={<LocationNO />}/>
-          <Route  path="/region/:id"  element={<LocationSO />}/>
-          <Route  path="/region/:id"  element={<LocationBR />}/>
-          <Route  path="/region/:id"  element={<LocationTO />}/>
-          <Route  path="/region/:id"  element={<LocationMO />}/>
-           <Route path="/LocationAll" element={<LocationAll />}/> 
+          <Route  path="/region/SPB" element={<LocationSPB />}/>
+          <Route  path="/region/LO" element={<LocationLO />}/>
+          <Route  path="/region/PSK" element={<LocationPSK />}/>
+          <Route  path="/region/NO" element={<LocationNO />}/>
+          <Route  path="/region/BR" element={<LocationBR />}/>
+          <Route  path="/region/TO" element={<LocationTO />}/>
+          <Route  path="/region/SO" element={<LocationSO />}/>
+          <Route  path="/region/MO" element={<LocationMO />}/>
+          <Route path="/region/All" element={<LocationAll/>}/>
             </Routes>
 
         <Footer />
