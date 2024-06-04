@@ -21,7 +21,7 @@ function App() {
         <Navbar />
         <Routes>
         <Route path="/" element={<Region/>}/>
-          <Route  path="/region/SPB" element={<LocationSPB />}/>
+          {/* <Route  path="/region/SPB" element={<LocationSPB />}/>
           <Route  path="/region/LO" element={<LocationLO />}/>
           <Route  path="/region/PSK" element={<LocationPSK />}/>
           <Route  path="/region/NO" element={<LocationNO />}/>
@@ -29,7 +29,7 @@ function App() {
           <Route  path="/region/TO" element={<LocationTO />}/>
           <Route  path="/region/SO" element={<LocationSO />}/>
           <Route  path="/region/MO" element={<LocationMO />}/>
-          <Route path="/region/All" element={<LocationAll/>}/>
+          <Route path="/region/All" element={<LocationAll/>}/> */}
             </Routes>
 
         <Footer />
