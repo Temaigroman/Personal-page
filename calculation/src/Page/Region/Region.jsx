@@ -4,10 +4,10 @@ import { locations } from "../../Lists/Location/locationListRegions";
 
 const Region = () => {
   const { id } = useParams();
-  console.log({id});
+  
   return (
     <div className="chose">
-      <NavLink to={`/region/${id}`}> 
+      <NavLink to={`/${id}`}>
         {locations.map((location, index) => {
           return (
             <Main_component

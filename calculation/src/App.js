@@ -21,14 +21,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Region/>}/>
-          <Route  path="/region/:id" element={<LocationSPB />}/>
-          <Route  path="/region/:id" element={<LocationLO />}/>
-          <Route  path="/region/:id" element={<LocationPSK />}/>
-          <Route  path="/region/:id" element={<LocationNO />}/>
-          <Route  path="/region/:id" element={<LocationBR />}/>
-          <Route  path="/region/:id" element={<LocationTO />}/>
-          <Route  path="/region/:id" element={<LocationSO />}/>
-          <Route  path="/region/:id" element={<LocationMO />}/>
+          <Route  path="/region/SPB" element={<LocationSPB />}/>
+          <Route  path="/region/LO" element={<LocationLO />}/>
+          <Route  path="/region/PSK" element={<LocationPSK />}/>
+          <Route  path="/region/NO" element={<LocationNO />}/>
+          <Route  path="/region/BR" element={<LocationBR />}/>
+          <Route  path="/region/TO" element={<LocationTO />}/>
+          <Route  path="/region/SO" element={<LocationSO />}/>
+          <Route  path="/region/MO" element={<LocationMO />}/>
           <Route path="/All" element={<LocationAll/>}/> 
         </Routes>
 

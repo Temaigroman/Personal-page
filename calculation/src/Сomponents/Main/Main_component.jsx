@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 const Main_component = ({ title, index, routeId }) => {
-  const url = `/region/${routeId}`; 
+  
   return (
-    <NavLink to={url}><button className="chose__btn">{title}</button></NavLink>
+    <button className="chose__btn">{title}</button>
   );
 }
 
