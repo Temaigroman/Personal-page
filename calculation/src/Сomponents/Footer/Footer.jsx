@@ -1,7 +1,7 @@
 import "./footer_style.css"
 const Footer = () => {
 	return ( 
-	<footer className="footer">Данные актуальны на :25.05.2024 </footer> );
+	<footer className="footer">Все совпаденя с реальностью случайны </footer> );
 }
  
 export default Footer;

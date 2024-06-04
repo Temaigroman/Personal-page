@@ -1,7 +1,10 @@
-const Main_component = (props) => {
+import { NavLink } from "react-router-dom";
+
+const Main_component = (title, index, routeId) => {
+	const url = `/region/SPB/${routeId}`;
 	return (
 
-		<button className="chose__btn">{props.title}</button>
+		<NavLink to= {url}><button className="chose__btn">{title}</button></NavLink>
 
 	);
 }
