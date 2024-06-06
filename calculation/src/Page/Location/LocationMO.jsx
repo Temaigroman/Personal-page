@@ -1,18 +1,16 @@
-import Main_component from "../../Сomponents/Main/Main_component";
-import { locations } from "../../Lists/Location/locationListMO";
+import { NavLink,  } from "react-router-dom";
 
-const LocationMO = () => {
-	return ( 
-	<div className="chose">
 
-		  {locations.map((location, index)=>{
-			return <Main_component key={index} title={location.title}/>
 
-			
-		})}  
-						
-	</div>
-);
-}
- 
-export default LocationMO;
+const Location = () => {
+
+  return (
+    <div className="chose">
+       <NavLink to="/region/MO/POD" className="chose__btn">Подольск</NavLink>
+       <NavLink to="/region/MO/ELECTRO" className="chose__btn">Электросталь</NavLink>
+	 
+    </div>
+  );
+};
+
+export default Location;

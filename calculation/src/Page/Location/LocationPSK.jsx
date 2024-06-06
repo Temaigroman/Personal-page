@@ -1,18 +1,21 @@
-import Main_component from "../../Сomponents/Main/Main_component";
-import { locations } from "../../Lists/Location/locationListPSK";
+import { NavLink,  } from "react-router-dom";
 
-const LocationPSK = () => {
-	return ( 
-	<div className="chose">
 
-		  {locations.map((location, index)=>{
-			return <Main_component key={index} title={location.title}/>
 
-			
-		})}  
-						
-	</div>
-);
-}
- 
-export default LocationPSK;
+const Location = () => {
+
+  return (
+    <div className="chose">
+       <NavLink to="/region/PSK/PSKOV" className="chose__btn">Псков</NavLink>
+       <NavLink to="/region/PSK/VL" className="chose__btn">Великие Луки</NavLink>
+       <NavLink to="/region/PSK/OSTROV" className="chose__btn">Остров</NavLink>
+       <NavLink to="/region/PSK/NEV" className="chose__btn">Невель</NavLink>
+			 <NavLink to="/region/PSK/SUCHOVO" className="chose__btn">Сущево</NavLink>
+       <NavLink to="/region/PSK/PORH" className="chose__btn">Порхов</NavLink>
+       
+	 
+    </div>
+  );
+};
+
+export default Location;

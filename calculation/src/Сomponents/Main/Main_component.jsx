@@ -1,6 +1,4 @@
-import { NavLink } from "react-router-dom";
-
-const Main_component = ({ title, index, routeId }) => {
+const Main_component = ({ title}) => {
   
   return (
     <button className="chose__btn">{title}</button>

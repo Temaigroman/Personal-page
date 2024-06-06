@@ -1,24 +1,20 @@
-import { NavLink, useParams } from "react-router-dom";
-import Main_component from "../../Сomponents/Main/Main_component";
-import { locations } from "../../Lists/Location/locationListRegions";
+import { NavLink,  } from "react-router-dom";
+
 
 const Region = () => {
-  const { id } = useParams();
+ 
   
   return (
     <div className="chose">
-      <NavLink to={`/${id}`}>
-        {locations.map((location, index) => {
-          return (
-            <Main_component
-              key={index}
-              title={location.titleLocation}
-              index={index}
-              routeId={id}
-            />
-          );
-        })}
-      </NavLink>
+       <NavLink to="/region/SPB" className="chose__btn">Санкт-Петербург</NavLink>
+       <NavLink to="/region/LO" className="chose__btn">Ленинградская область</NavLink>
+       <NavLink to="/region/PSK" className="chose__btn">Псковская область</NavLink>
+       <NavLink to="/region/NO" className="chose__btn">Новгородская область</NavLink>
+       <NavLink to="/region/TO" className="chose__btn">Тверская область</NavLink>
+       <NavLink to="/region/BR" className="chose__btn">Брянская область</NavLink>
+       <NavLink to="/region/SO" className="chose__btn">Смоленская область</NavLink>
+       <NavLink to="/region/MO" className="chose__btn">Московская область</NavLink>
+      
     </div>
   );
 };
