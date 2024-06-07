@@ -1,6 +1,6 @@
 import { NavLink,  } from "react-router-dom";
 
-const Location = () => {
+const WorksMP = () => {
 
   return (
     <div className="chose">
@@ -11,4 +11,4 @@ const Location = () => {
   );
 };
 
-export default Location;
+export default WorksMP;

@@ -13,6 +13,7 @@ import LocationBR from './Page/Location/LocationBR'
 import LocationTO from './Page/Location/LocationTO'
 import LocationSO from './Page/Location/LocationSO'
 import LocationMO from './Page/Location/LocationMO'
+import WorksMP from './Page/Works/WorksMP';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          {/* Блок с главной страницей и регионами */}
           <Route path="/" element={<Region/>}/>
           <Route  path="/region/SPB" element={<LocationSPB />}/>
           <Route  path="/region/LO" element={<LocationLO />}/>
@@ -31,6 +33,8 @@ function App() {
           <Route  path="/region/SO" element={<LocationSO />}/>
           <Route  path="/region/MO" element={<LocationMO />}/>
           <Route path="/All" element={<LocationAll/>}/> 
+          {/* Блок со страницами должностей на участках */}
+          <Route path="/region/SPB/MP/" element={<WorksMP/>}/>
         </Routes>
 
         <Footer />
