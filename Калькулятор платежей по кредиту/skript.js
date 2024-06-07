@@ -8,6 +8,10 @@ function calculatePayment() {
   var monthlyInterest = interest/100 / 12;
   var payments = munth;
 
+  console.log(amount);
+  console.log(interest);
+  console.log(munth);
+
   
   var x = Math.pow(1 + monthlyInterest, payments);
   var monthlyPayment = (amount * x * monthlyInterest) / (x - 1);
