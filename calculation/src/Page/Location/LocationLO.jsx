@@ -14,7 +14,7 @@ const Location = () => {
        <NavLink to="/region/LO/VIBO" className="chose__btn">Выборг</NavLink>
        <NavLink to="/region/LO/GATCH" className="chose__btn">Гатчина</NavLink>
 			 <NavLink to="/region/LO/TOS" className="chose__btn">Тосно</NavLink>
-			 
+			 <NavLink to="/region/LO/NOVOSARAT" className="chose__btn">Новосаратовка</NavLink>
     </div>
   );
 };
